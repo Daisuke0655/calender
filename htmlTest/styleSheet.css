@@ -1,0 +1,109 @@
+.calendarbox{
+    width: 90%;
+    margin:0 auto;
+    border-radius: 5px;
+    background: #dbebf8;  
+
+}
+.innerBox{
+    width: 90%;
+    margin:0 auto;
+    border-radius: 25px;
+    background: #ffffff;
+}
+.icon-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0 20px 0;
+    line-height: 0.2;
+    align-items: center;
+    text-align: center;
+}
+#calenderMonth{
+    font-size: 52px;
+    color: white;
+}
+#calenderYear{
+    font-size: 28px;
+    color: gray;
+}
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #dbebf8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .todayContainer {
+    width: 100px;
+    height: 100px;
+    border: none;
+    position: relative;
+  }
+  .todayCircle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #dbebf8;
+    position: absolute; /* 追加 */
+    top: 50%; /* 要素を縦方向に中央に配置 */
+    left: 50%; /* 要素を横方向に中央に配置 */
+    transform: translate(-50%, -50%); /* 要素を正確に中央に配置 */
+  }
+.parentCalender{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    font-family: inherit;
+    appearance: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 45px;
+    color: gray;
+  }
+td{
+    font-weight : bold;
+}
+th,td{
+    text-align: center;
+    padding: 10px;
+}
+table{
+    width: 80%;
+    margin: auto;
+}
+table, td, th { 
+    border: 2px #808080 solid; 
+    border-collapse: collapse;
+}
+
+  @media screen and (max-height: 500px) {
+    th,td{
+        padding: 1px;
+    }
+    .icon-container{
+        margin: 0 0 4px 0;
+    }
+    .circle {
+        width: 50px;
+        height: 50px;
+      }
+      #calenderMonth{
+        font-size: 25px;
+    }
+    #calenderYear{
+        font-size: 15px;
+    }
+    button {
+        font-size: 25px;
+    }
+    .todayCircle {
+      margin-left: 45%;
+      margin-top: 1%;
+    }
+  }
