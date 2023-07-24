@@ -106,7 +106,7 @@ function calendar(){
           tableCell.style.color = "#6fb5ff";
         }
         if(currentWeek==num&&currentDay==index&&difference == 0){
-          tableCell.style.color = "red";
+          tableCell.style.color = "#E00000";
         }
         holidayArray.forEach((element) => {
           if(element == index + num*7-firstDay+1){
